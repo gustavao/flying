@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="navbarColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Pagos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page4">
+  <ion-list id="pagos-list3">
+    <ion-item-divider color="light" id="pagos-list-item-divider2">
+      Métodos de Pago
+    </ion-item-divider>
+    <ion-item color="none" id="pagos-list-item14">
+      <ion-icon name="card" item-left></ion-icon>
+      ****9375
+    </ion-item>
+    <ion-item color="none" id="pagos-list-item15">
+      <ion-icon name="cash" item-left></ion-icon>
+      Efectivo
+    </ion-item>
+    <ion-item color="none" id="pagos-list-item16">
+      <ion-icon name="card" item-left></ion-icon>
+      ****6583
+    </ion-item>
+    <ion-item color="positive" on-click="goToAgregarMTodoDePago()" id="pagos-list-item23">
+      Agregar método de pago
+    </ion-item>
+    <ion-item color="positive" on-click="goToPromoRegalo()" id="pagos-list-item26">
+      Agregar un código / promo
+    </ion-item>
+  </ion-list>
+</ion-content>

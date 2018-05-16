@@ -1,1 +1,34 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mainContent">
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" on-click="goToCuenta()" id="menu-list-item4">
+        <ion-avatar item-left>
+          <img src="../assets/img/user.png"/>
+        </ion-avatar>
+        <h2>
+          Gustavo
+        </h2>
+      </ion-item>
+      <ion-item-divider color="light" id="menu-list-item-divider1"></ion-item-divider>
+    </ion-list>
+    <ion-list id="menu-list2">
+      <ion-item color="none" menuClose="" on-click="goToPagos()" id="menu-list-item8">
+        Pagos
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToViajes()" id="menu-list-item9">
+        Viajes
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToAyuda()" id="menu-list-item10">
+        Ayuda
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToPromociones()" id="menu-list-item11">
+        Promociones
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToConfiguraciN()" id="menu-list-item12">
+        Configuración
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

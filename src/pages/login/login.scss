@@ -1,0 +1,22 @@
+page-login {
+    .bg{
+        background: radial-gradient(#fecd40 50%,#f6aa3d 100%);
+    }
+
+    .bg-image{
+        background-image: url("../assets/img/fonup.png");
+        background-repeat: no-repeat;
+        background-position: center fixed;
+        background-size: cover;
+    }
+
+    .item-input {
+        background-color: transparent;
+    }
+
+    .butt-log{
+        background-color: #003399;
+    }
+}
+
+

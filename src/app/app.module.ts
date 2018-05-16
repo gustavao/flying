@@ -1,16 +1,37 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { PagosPage } from '../pages/pagos/pagos';
+import { ViajesPage } from '../pages/viajes/viajes';
+import { AyudaPage } from '../pages/ayuda/ayuda';
+import { PromocionesPage } from '../pages/promociones/promociones';
+import { ConfiguraciNPage } from '../pages/configuraci-n/configuraci-n';
+import { CuentaPage } from '../pages/cuenta/cuenta';
+import { AgregarMTodoDePagoPage } from '../pages/agregar-mtodo-de-pago/agregar-mtodo-de-pago';
+import { PromoRegaloPage } from '../pages/promo-regalo/promo-regalo';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    PagosPage,
+    ViajesPage,
+    AyudaPage,
+    PromocionesPage,
+    ConfiguraciNPage,
+    CuentaPage,
+    AgregarMTodoDePagoPage,
+    PromoRegaloPage,
+    LoginPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -19,12 +40,23 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    PagosPage,
+    ViajesPage,
+    AyudaPage,
+    PromocionesPage,
+    ConfiguraciNPage,
+    CuentaPage,
+    AgregarMTodoDePagoPage,
+    PromoRegaloPage,
+    LoginPage,
+    SignupPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    InAppBrowser
   ]
 })
 export class AppModule {}
