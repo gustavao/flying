@@ -1,0 +1,8 @@
+{
+  "name": "flying",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
