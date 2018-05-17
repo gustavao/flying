@@ -14,6 +14,7 @@ import { PromoRegaloPage } from '../pages/promo-regalo/promo-regalo';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { CompraPage } from '../pages/compra/compra';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AgregarMTodoDePagoPage,
     PromoRegaloPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    CompraPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AgregarMTodoDePagoPage,
     PromoRegaloPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    CompraPage
   ],
   providers: [
     StatusBar,
